@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+
+{% from 'components/card.html' import card %}
+
+{% block content %}
+    <h1>Index</h1>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            {{card('static/image/kingsley.png', 'title', "https://www.google.com", "description")}}
+          </div>
+          <div class="col">
+            {{card('static/image/kingsley.png', 'title', "https://www.google.com", "description")}}
+          </div>
+          <div class="col">
+            {{card('static/image/kingsley.png', 'title', "https://www.google.com", "description")}}
+          </div>
+        </div>
+      </div>
+    
+
+{% endblock %}
